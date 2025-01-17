@@ -103,3 +103,5 @@ Once an endpoint is created, it can then be used by the front-end, build on the 
 
 5/ Display a graphic visualization of a benchmark within each Activity sectors, where you compare companies based on their scores.
 
+This part does not need to be shared before-hand but can be presented during the interview.
+
