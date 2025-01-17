@@ -92,9 +92,14 @@ The tasks of this exercice are as follows:
 # Explorate the Front End
 
 Once an endpoint is created, it can then be used by the front-end, build on the low code framework Retool. Altough your role will mostly consists in developing on the Typescript backend, you will have to contribute to the low code platform from time to time. In the following, you will build your first functionality on Retool. Here are the steps to follow:
+
 1/ Create a free account on the Retool platform.
+
 2/ In the github project you can find a file dummy_data_form_submissions containing some dummy data. Implement a table showing the data and a search bar to search over the company name.
+
 3/ Update the table to make the company column editable
+
 4/ Display the activity sector as a tag. 
+
 5/ Display a graphic visualization of a benchmark within each Activity sectors, where you compare companies based on their scores.
 
