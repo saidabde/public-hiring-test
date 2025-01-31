@@ -85,9 +85,9 @@ The calculation of the Agrybalise carbon footprint can be described as below:
 - If the carbon footprint of one ingredient cannot be calculated, then the carbon footprint of the whole product is set to null.
 
 The tasks of this exercice are as follows:
-1/ Implement the carbon footprint calculation of a product and persist the results in database.
-2/ Implement a GET endpoint to retrieve the result.
-3/ Implement a POST endpoint to trigger the calculation and the saving in the database.
+1. Implement the carbon footprint calculation of a product and persist the results in database.
+2. Implement a GET endpoint to retrieve the result.
+3. Implement a POST endpoint to trigger the calculation and the saving in the database.
 
 # Explorate the Front End
 
