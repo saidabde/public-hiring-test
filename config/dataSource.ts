@@ -16,7 +16,7 @@ const dataSourceOptions: DataSourceOptions = {
   synchronize: false,
   logging: false,
   entities: [join(__dirname, "../src/**/*.entity.{js,ts}")],
-  migrations: [join(__dirname, "../migrations", "*.*")],
+  migrations: [join(__dirname, "../src/migrations", "*.*")],
   migrationsTableName: "migrations",
   migrationsRun: process.env.MIGRATIONS_RUN === "true",
 };
