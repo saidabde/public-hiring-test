@@ -1,5 +1,11 @@
 import { Type } from "class-transformer";
-import { IsArray, IsNotEmpty, IsString, ValidateNested } from "class-validator";
+import {
+  ArrayNotEmpty,
+  IsArray,
+  IsNotEmpty,
+  IsString,
+  ValidateNested,
+} from "class-validator";
 import { IngredientDto } from "./ingredient.dto";
 
 export class FoodProductCarbonFootprintCreationDto {
@@ -10,6 +16,7 @@ export class FoodProductCarbonFootprintCreationDto {
   name: string;
 
   @IsArray({ message: "Ingredients must be provided as an array." })
+  @ArrayNotEmpty({ message: "At least one ingredient must be provided" })
   @ValidateNested({ each: true, message: "Each ingredient must be valid." })
   @Type(() => IngredientDto)
   ingredients: IngredientDto[];
