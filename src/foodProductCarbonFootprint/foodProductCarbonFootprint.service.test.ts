@@ -111,6 +111,15 @@ describe("FoodProductCarbonFootprint.service", () => {
     expect(foodProductCarbonFootprintService.create(dto)).rejects.toThrow();
   });
 
+  it("should not allow creating a food product with no ingredients", async () => {
+    const dto: FoodProductCarbonFootprintCreationDto = {
+      name: "Pizza",
+      ingredients: [],
+    };
+
+    expect(foodProductCarbonFootprintService.create(dto)).rejects.toThrow();
+  });
+
   it("should find a food product by name", async () => {
     const dto: FoodProductCarbonFootprintCreationDto = {
       name: "Pizza",
