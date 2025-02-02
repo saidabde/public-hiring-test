@@ -21,7 +21,6 @@ export class CarbonEmissionFactorsController {
   createCarbonEmissionFactors(
     @Body() carbonEmissionFactors: CreateCarbonEmissionFactorDto[]
   ): Promise<CarbonEmissionFactor[] | null> {
-    ``;
     Logger.log(
       `[carbon-emission-factors] [POST] CarbonEmissionFactor: ${carbonEmissionFactors} created`
     );
